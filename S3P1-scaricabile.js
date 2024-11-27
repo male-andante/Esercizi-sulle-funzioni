@@ -6,12 +6,12 @@
 let num1 = 13
 let num2 = 13
 
-function crazySum(n1, n2) {
-    if (n1 === n2) {
-        let somma = 3*(n1 + n2)
+function crazySum(int1, int2) {
+    if (int1 === int2) {
+        let somma = 3*(int1 + int2)
         return somma
     } else {
-        let somma = n1 + n2
+        let somma = int1 + int2
         return somma
     }
     }
@@ -23,7 +23,16 @@ console.log(somma)
  Scrivi una funzione chiamata "boundary", che accetta un numero intero come parametro e ritorna true se tale parametro è incluso tra 20 e 100 (incluso) o se è esattamente uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numero = 100
+
+const boundary = function(n) {
+    if ((n>20 && n<=100) || n === 400) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log (boundary(numero))
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
