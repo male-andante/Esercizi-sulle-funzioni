@@ -3,7 +3,21 @@
  La funzione deve ritornare la somma di quei due valori, ma se il loro valore è lo stesso allora deve ritornare la loro somma moltiplicata per 3.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 13
+let num2 = 13
+
+function crazySum(n1, n2) {
+    if (n1 === n2) {
+        let somma = 3*(n1 + n2)
+        return somma
+    } else {
+        let somma = n1 + n2
+        return somma
+    }
+    }
+
+somma = crazySum(num1, num2)
+console.log(somma)
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "boundary", che accetta un numero intero come parametro e ritorna true se tale parametro è incluso tra 20 e 100 (incluso) o se è esattamente uguale a 400.
