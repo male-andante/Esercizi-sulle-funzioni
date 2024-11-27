@@ -51,7 +51,15 @@ console.log(reverseString(stringa))
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let parola = "hello world"
+
+const upperFirst = function(string) {
+    let uppercaseChar = string.chartAt(0).toUpperCase()
+    let cutString = string.slice(1)
+    return uppercaseChar + cutString
+}
+
+console.log(upperFirst(parola))
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
